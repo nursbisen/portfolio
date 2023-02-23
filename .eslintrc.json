@@ -1,0 +1,47 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "react-app",
+        "airbnb",
+        "airbnb-typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/typescript",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "prettier",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": ["error", "tab"],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "react/jsx-curly-newline": 0,
+        "react/react-in-jsx-scope": 0,
+        "react/jsx-filename-extension": [
+        "error",
+        {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+        ],
+        "import/no-unresolved": "error",
+        "no-restricted-exports": "off",
+        "newline-before-return":"warn",
+        "newline-after-var":"warn",
+        "react/require-default-props": "off",
+        "@typescript-eslint/default-param-last": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/consistent-type-imports": ["warn", { "prefer": "type-imports" }]
+    }
+}
